@@ -1,3 +1,8 @@
+:root {
+    --color1: rgb(103, 137, 131);
+    --color2: rgb(230, 221, 196);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,8 +32,8 @@ nav {
     padding: 5px;
     margin: 10px;
     border-radius: 5px 5px 10px 5px;
-    background-color: rgb(230, 221, 196);
-    box-shadow: 3px 2px 0px 1px rgb(103, 137, 131);
+    background-color: var(--color2);
+    box-shadow: 3px 2px 0px 1px var(--color1);
 }
 
 .itemMenu:active {
@@ -59,16 +64,17 @@ nav>ul>li>a {
 .titulo1 {
     text-align: center;
     font-size: 60px;
-    color: rgb(235, 234, 234);
+    color: var(--color2);
     text-shadow: 5px 5px black;
 }
 
 /* FIN DEL HEADER */
 
-.titulo2 {
+.titulo2,
+.titulo3 {
     text-align: center;
     font-size: 40px;
-    color: #678983;
+    color: var(--color1);
     text-shadow: 2px 2px black;
     margin-top: 10px;
 }
@@ -91,8 +97,8 @@ img {
 .imgJuego {
     width: 400px;
     height: 420px;
-    border: 5px solid rgb(103, 137, 131);
-    background-color: rgb(230, 221, 196);
+    border: 5px solid var(--color1);
+    background-color: var(--color2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -111,17 +117,17 @@ img {
     text-align: center;
     margin: 10px;
     background-color: rgb(24, 28, 48);
-    color: rgb(230, 221, 196);
+    color: var(--color2);
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
-    box-shadow: 3px 2px 1px 1px rgb(103, 137, 131);
+    box-shadow: 3px 2px 1px 1px var(--color1);
 }
 
 .boton01:active {
     transform: scale(0.98);
-    box-shadow: 2px 2px 1px 1px rgb(230, 221, 196);
-    color: rgb(230, 221, 196);
+    box-shadow: 2px 2px 1px 1px var(--color2);
+    color: var(--color2);
 }
 
 /*FIN DEL MAIN*/
@@ -130,7 +136,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(103, 137, 131);
+    background-color: var(--color1);
 }
 
 .logoMain {
@@ -159,7 +165,7 @@ img {
 
 .tituloHistoria,
 .tituloVideo {
-    color: rgb(103, 137, 131);
+    color: var(--color1);
     font-size: 45px;
     text-align: center;
     margin: 5px;
@@ -176,7 +182,7 @@ img {
 
 .pHistoria {
     width: 600px;
-    color: rgb(230, 221, 196);
+    color: var(--color2);
     text-align: left;
 }
 
@@ -186,24 +192,24 @@ img {
     margin-bottom: 30px;
 }
 
-.videO{
+.videO {
     display: flex;
     flex-direction: column;
     padding: 5px;
     align-items: center;
     margin: 50px;
-    background-color:rgb(10, 9, 9);
+    background-color: rgb(10, 9, 9);
     width: 800px;
     margin: 40px auto;
-    
+
 
 }
 
-video{
+video {
     width: 100%;
 }
 
-.controlesGral{
+.controlesGral {
     display: flex;
     width: 100%;
     background-color: rgb(57, 57, 57);
@@ -212,27 +218,88 @@ video{
     margin-top: 5px;
 }
 
-.controlesVideo{
-margin: 5px;
+.controlesVideo {
+    margin: 5px;
 }
 
-.duracionVideo{
-margin: 5px;
-padding-top: 10px;
-padding-right: 100px;
-font-size: 20px;
+.duracionVideo {
+    margin: 5px;
+    padding-top: 10px;
+    padding-right: 100px;
+    font-size: 20px;
 }
-#playVideo , #pauseVideo {
-    background-color: rgb(230, 221, 196);;
+
+#playVideo,
+#pauseVideo {
+    background-color: var(--color2);
     padding: 10px 30px;
     margin: 5px;
     border: solid 2px black;
-    border-radius:10px;
-    box-shadow: 3px 3px rgb(103, 137, 131);
+    border-radius: 10px;
+    box-shadow: 3px 3px var(--color1);
 }
 
-#playVideo:active,  #pauseVideo:active  {
-    box-shadow: 3px 3px  rgb(45, 45, 45);
-    transform: scale(0.95);
-} 
+#playVideo:active,
+#pauseVideo:active {
+    box-shadow: 3px 3px rgb(45, 45, 45);
+    transform: scale(0.96);
+}
 
+/*INDEX 3 */
+
+/*SECTION CONTENEDOR */
+
+.titulo3 {
+    margin-top: 100px;
+}
+
+.contenedorA,
+.contenedorB {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    width: auto;
+}
+
+.contenedorB {
+    gap: 20px;
+}
+
+.contenedor2 {
+    width: 320px;
+    height: 450px;
+    background-color: rgb(138, 138, 138);
+    border: solid 2px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor2:hover {
+    background-color: rgb(43, 38, 38);
+}
+
+.infoCont {
+    color: var(--color2);
+}
+
+/* BUTTON */
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.reinicio{
+    padding: 10px 120px;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 3px 3px var(--color1);
+}
+
+.reinicio:active{
+    transform: scale(0.98);
+    box-shadow: 3px 3px  rgb(24, 28, 48);
+}
