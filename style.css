@@ -271,6 +271,15 @@ video {
     gap: 20px;
 }
 
+
+/* IMAGENES JUEGO */ 
+
+.imgX:active{
+    transform: scale(0.98);
+    border: solid 3px var(--color1);
+
+}
+
 .contenedor2 {
     width: 320px;
     height: 450px;
@@ -309,3 +318,4 @@ video {
     transform: scale(0.98);
     box-shadow: 3px 3px  rgb(24, 28, 48);
 }
+
