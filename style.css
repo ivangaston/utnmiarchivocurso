@@ -294,9 +294,9 @@ video {
 
 }
 
-.contenedor2 {
+.imgBox {
     width: 320px;
-    height: 450px;
+    height: 480px;
     background-color: rgb(138, 138, 138);
     border: solid 2px rgb(0, 0, 0);
     display: flex;
@@ -305,7 +305,7 @@ video {
     text-align: center;
 }
 
-.contenedor2:hover {
+.imgBox:hover {
     background-color: rgb(43, 38, 38);
 }
 
@@ -339,7 +339,7 @@ video {
 .color0 {
     background-color: var(--color2);
 }
-
+ 
 /**********************************************************/
 
 @keyframes efect1 {

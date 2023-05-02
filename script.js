@@ -35,14 +35,53 @@ window.addEventListener('load', () => {
 
 
 // JUEGO ROMPECABEZAS
-const imgJuego = Array.from(document.getElementsByClassName('imgX'));
-imgJuego.forEach((img) => {
-    img.addEventListener('dragstart', () => {
-        console.log('movement');
+
+const imgGame = document.querySelectorAll('.imgX');
+const cajaGame = document.querySelectorAll('.imgBox');
+
+let draggedItem = null;
+
+for (let i = 0; i < imgGame.length; i++) {
+    const draggable = imgGame[i];
+
+    draggable.addEventListener('dragstart', function () {
+        draggedItem = draggable;
+        setTimeout(function () {
+            draggable.style.display = 'none';
+        },0);
     });
-});
+
+    draggable.addEventListener('dragend', function () {
+        setTimeout(function () {
+            draggedItem.style.display = 'block';
+            draggedItem = null;
+        },0);
+    });
+}
+
+for (let i = 0; i < cajaGame.length; i++) {
+    const dropzone = cajaGame[i];
+
+    dropzone.addEventListener('dragover', function (event) {
+        event.preventDefault();
+    });
+
+    dropzone.addEventListener('drop', function () {
+        this.appendChild(draggedItem);
+
+        this.classList.add('occupied');
+        dropzone.style.pointerEvents = 'none'; 
+        
+        const p = this.querySelector('p');
+        if (p) {
+            p.style.display = 'none';
+        }
+    });
+};
+
+
 
 /*REINICIO JUEGO*/
-let botonRestart =()=>{
+let botonRestart = () => {
     window.location.reload()
 }
