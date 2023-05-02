@@ -46,6 +46,19 @@ nav>ul>li>a {
     text-decoration: none;
 }
 
+
+/* ANIMACION SVG */
+#svg01,
+#svg03 {
+    animation: efect1 3s 1;
+}
+
+#svg02,
+#svg04 {
+    animation: efect1 3s 1s 1;
+}
+
+
 /*FIN DEL NAV*/
 
 .header {
@@ -98,7 +111,7 @@ img {
     width: 400px;
     height: 420px;
     border: 5px solid var(--color1);
-    background-color: var(--color2);
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -230,14 +243,15 @@ video {
     font-size: 18px;
     gap: 10px;
 }
-#duracionVideo, #time01{
+
+#duracionVideo,
+#time01 {
     color: var(--color2);
 }
 
 
 #playVideo,
 #pauseVideo {
-    background-color: var(--color2);
     padding: 10px 30px;
     margin: 5px;
     border: solid 2px black;
@@ -272,9 +286,9 @@ video {
 }
 
 
-/* IMAGENES JUEGO */ 
+/* IMAGENES JUEGO */
 
-.imgX:active{
+.imgX:active {
     transform: scale(0.98);
     border: solid 3px var(--color1);
 
@@ -301,21 +315,51 @@ video {
 
 /* BUTTON */
 
-.button{
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px;
 }
-.reinicio{
+
+.reinicio {
     padding: 10px 120px;
     border-radius: 15px;
     font-size: 20px;
     box-shadow: 3px 3px var(--color1);
 }
 
-.reinicio:active{
+.reinicio:active {
     transform: scale(0.98);
-    box-shadow: 3px 3px  rgb(24, 28, 48);
+    box-shadow: 3px 3px rgb(24, 28, 48);
 }
 
+/*BACKGROUND-COLOR VAR2*/
+
+.color0 {
+    background-color: var(--color2);
+}
+
+/**********************************************************/
+
+@keyframes efect1 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

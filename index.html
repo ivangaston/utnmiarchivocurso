@@ -12,7 +12,23 @@
     <body>
 
         <nav>
-            <a href="./index.html"> INICIO </a>
+            <a href="./index.html"> 
+                <svg width="150" height="60" color="black">
+                    <rect x="20" y="5" width="60" height="35" rx="5" id="svg01"
+                        fill="#F0E9D2">
+                    </rect>
+                    <rect x="25" y="10" width="50" height="25" rx="5" id="svg02"
+                        fill="#495579">
+                    </rect>
+                    <polygon points="25 45 ,78 45,105 85,10 62" fill="#F0E9D2"
+                        id="svg03">
+                    </polygon>
+                    <polygon points="27 48 ,75 48,84 58,18 58" fill="#495579"
+                        id="svg04">
+                    </polygon>
+                </svg> 
+            </a>
+
             <ul class="menuP">
                 <li class="itemMenu"><a href="./indexDos.html">Historia</a></li>
                 <li class="itemMenu"><a href="./indexTres.html">Juguemos</a></li>
@@ -27,12 +43,13 @@
 
         <main class="mainMenu">
 
-            <div class="imgHistoria">
+            <div class="imgHistoria color0" >
                 <img src="./imagenes/img1.jpg" alt="imagen*">
                 <p>Conozcamos un poco la historia de la programacion</p>
                 <a class="boton01" href="./indexDos.html">Ir a historia</a>
             </div>
-            <div class="imgJuego">
+
+            <div class="imgJuego color0">
                 <img src="./imagenes/img2.jpg" alt="imagen*">
                 <p>Juguemos un juego de computacion</p>
                 <a class="boton01" href="./indexTres.html">Ir a Juego</a>
@@ -44,9 +61,11 @@
             <img class="logoMain" src="./imagenes/logo.png" alt="logo">
             <h3 class="h3Main">PROGRAMACION <br> E <br> HISTORIA</h3>
             <p class="footerP">Sitio con fines educativos - Proyecto hecho por
-                Ivan.T</p>
+                Ivan.T
+            </p>
         </footer>
 
         <script src="./script.js"></script>
+
     </body>
 </html>

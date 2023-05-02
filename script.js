@@ -41,3 +41,8 @@ imgJuego.forEach((img) => {
         console.log('movement');
     });
 });
+
+/*REINICIO JUEGO*/
+let botonRestart =()=>{
+    window.location.reload()
+}

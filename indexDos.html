@@ -9,7 +9,23 @@
     </head>
     <body>
         <nav>
-            <a href="./index.html"> INICIO </a>
+            <a href="./index.html"> 
+                <svg width="150" height="60" color="black">
+                    <rect x="20" y="5" width="60" height="35" rx="5" id="svg01"
+                        fill="#F0E9D2">
+                    </rect>
+                    <rect x="25" y="10" width="50" height="25" rx="5" id="svg02"
+                        fill="#495579">
+                    </rect>
+                    <polygon points="25 45 ,78 45,105 85,10 62" fill="#F0E9D2"
+                        id="svg03">
+                    </polygon>
+                    <polygon points="27 48 ,75 48,84 58,18 58" fill="#495579"
+                        id="svg04">
+                    </polygon>
+                </svg> 
+            </a>
+
             <ul class="menuP">
                 <li class="itemMenu"><a href="./indexDos.html">Historia</a></li>
                 <li class="itemMenu"><a href="./indexTres.html">Juguemos</a></li>
@@ -24,7 +40,9 @@
 
             <div class="textoHistoria">
                 <h2 class="tituloHistoria">El principio de la historia de la
-                    programación</h2>
+                    programación
+                </h2>
+
                 <p class="pHistoria">El primer lenguaje de programación fue un
                     algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó
                     este algoritmo para el motor analítico de Charles Babbage.
@@ -55,7 +73,9 @@
 
             <div class="textoHistoria">
                 <h2 class="tituloHistoria">Los primeros lenguajes de
-                    programación</h2>
+                    programación
+                </h2>
+
                 <p class="pHistoria">FORmulaTRANslation es el lenguaje de
                     programación más antiguo y que continúa en uso. Creada por
                     John Backus en 1957, esta herramienta fue desarrollada para
@@ -108,26 +128,31 @@
                 <source src="./video/historia-Comp.ogv" type="video/ogv">
             </video>
             <div class="controlesGral">
+
                 <div class="controlesVideo">
-                    <button id="playVideo"><img
+                    <button id="playVideo"class= "color0"><img
                             src="./imagenes/play.svg" alt="play*">
                     </button>
 
-                    <button id="pauseVideo"><img
+                    <button id="pauseVideo" class="color0"><img
                             src="./imagenes/pausa.svg" alt="pause*">
                     </button>
                 </div>
+
                 <div id="duracionVideo">Duracion del video:<div id="time01">00:00</div></div>
             </div>
+
         </section>
 
         <footer class="piePagina">
             <img class="logoMain" src="./imagenes/logo.png" alt="logo">
             <h3 class="h3Main">PROGRAMACION <br> E <br> HISTORIA</h3>
             <p class="footerP">Sitio con fines educativos - Proyecto hecho por
-                Ivan.T</p>
+                Ivan.T
+            </p>
         </footer>
 
         <script src="./script.js"></script>
+
     </body>
 </html>
